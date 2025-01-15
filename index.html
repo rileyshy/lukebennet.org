@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luke Bennet </title>
+    <title>Luke Bennet</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,16 +20,13 @@
         <section id="home">
             <div class="home-container">
                 <h1>Welcome to Lukey Wooky Pooky</h1>
-                <p> "Excuse me mine name is Luke!"</p>
+                <p>"Excuse me, mine name is Luke!"</p>
             </div>
         </section>
-        
-
-
-
-
+        <button id="latest-video-btn">Latest Video</button>
+    </main>
     <script>
-        // Get the button element
+        // Get the button element for the latest video
         var latestVideoBtn = document.getElementById("latest-video-btn");
 
         // Add click event listener to the button
@@ -37,12 +34,15 @@
             // Redirect to the YouTube channel URL
             window.location.href = "https://www.youtube.com/@RileyB-Community";
         });
-          const playButton = document.getElementById('playButton');
-          const audioPlayer = document.getElementById('audioPlayer');
 
-         playButton.addEventListener('click', () => {
-           audioPlayer.play();
-       });
+        // Get the play button and audio player
+        const playButton = document.getElementById('playButton');
+        const audioPlayer = document.getElementById('audioPlayer');
+
+        // Add event listener to play the audio
+        playButton.addEventListener('click', () => {
+            audioPlayer.play();
+        });
     </script>
 </body>
 </html>
