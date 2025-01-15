@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Bennet </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home (You are here!)</li>
+                <button id="playButton">Play Sound</button>
+                <audio id="audioPlayer" src="assets/audio/get-out.mp3"></audio>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="home-container">
+                <h1>Welcome to Lukey Wooky Pooky</h1>
+                <p> "Excuse me mine name is Luke!"</p>
+            </div>
+        </section>
+        
+
+
+
+
+    <script>
+        // Get the button element
+        var latestVideoBtn = document.getElementById("latest-video-btn");
+
+        // Add click event listener to the button
+        latestVideoBtn.addEventListener("click", function() {
+            // Redirect to the YouTube channel URL
+            window.location.href = "https://www.youtube.com/@RileyB-Community";
+        });
+          const playButton = document.getElementById('playButton');
+          const audioPlayer = document.getElementById('audioPlayer');
+
+         playButton.addEventListener('click', () => {
+           audioPlayer.play();
+       });
+    </script>
+</body>
+</html>
